@@ -38,7 +38,7 @@ package("boost")
     for _, libname in ipairs(libnames) do
         add_configs(libname,    { description = "Enable " .. libname .. " library.", default = (libname == "filesystem"), type = "boolean"})
     end
-
+ 
     on_load("windows", function (package)
         local vs_runtime = package:config("vs_runtime")
         for _, libname in ipairs(libnames) do

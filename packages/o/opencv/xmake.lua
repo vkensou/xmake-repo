@@ -10,7 +10,7 @@ package("opencv")
     add_versions("3.4.9", "b7ea364de7273cfb3b771a0d9c111b8b8dfb42ff2bcd2d84681902fb8f49892a")
 
     add_deps("cmake", "python 3.x")
-
+ 
     if is_plat("macosx") then
         add_frameworks("Foundation", "CoreFoundation", "CoreGraphics", "AppKit", "OpenCL")
     elseif is_plat("linux") then
